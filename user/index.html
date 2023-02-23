@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Management Application</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>User Management Application</h1>
+	<form id="userForm">
+		<label for="fullName">Full Name:</label>
+		<input type="text" id="fullName" name="fullName" required><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" required><br>
+
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female" required>
+		<label for="female">Female</label><br>
+
+		<label for="hobby">Hobby:</label>
+		<input type="text" id="hobby" name="hobby" required><br>
+
+		<label for="country">Country:</label>
+		<select id="country" name="country" required>
+			<option value="">--Select Country--</option>
+			<option value="India">India</option>
+			<option value="USA">USA</option>
+			<option value="Australia">Australia</option>
+		</select><br>
+
+		<label for="state">State:</label>
+		<select id="state" name="state" >
+			<option value="">--Select State--</option>
+		</select><br>
+
+		<label for="city">City:</label>
+		<select id="city" name="city" >
+			<option value="">--Select City--</option>
+		</select><br>
+
+		<button type="submit" id="addUser">Add User</button>
+		<button type="button" id="updateUser">Update User</button>
+		<button type="button" id="cancelUpdate">Cancel</button>
+	</form>
+
+	<h2>Users List</h2>
+	<ul id="userList">
+		<!-- User list will be populated dynamically using JavaScript -->
+	</ul>
+
+	<script src="script.js"></script>
+</body>
+</html>
